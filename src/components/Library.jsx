@@ -104,7 +104,7 @@ export default function Library() {
   return (
     <div class="px-5 my-5">
       <h2 className="text-4xl font-semibold mb-6">LIBRARY</h2>
-      <div class="grid grid-cols-3 gap-4">
+      <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 gap-4">
         {books.map((book, i) => (
           <Book
             key={i}
