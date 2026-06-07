@@ -12,7 +12,7 @@
 
 Do or install these things first
 
-- install [VSCode]([url](https://code.visualstudio.com/download)) (code editor) (you could use VMware if you don't want to install anything, but I don't recommend it)
+- install [VSCode]([url](https://code.visualstudio.com/download)) (code editor)
 - open your terminal (you've got this)
 
 <hr/>
