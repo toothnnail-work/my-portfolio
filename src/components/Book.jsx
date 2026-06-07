@@ -48,13 +48,13 @@ export default function Book({ bookCover, bookPages }) {
             onClick={(e) => e.stopPropagation()}
           >
             <HTMLFlipBook
-              autoSize={true}
+              // autoSize={true}
               width={isMobile ? 285 : 480}
               height={isMobile ? 400 : 683}
               size="stretch"
-              minWidth={285}
-              maxWidth={isMobile ? 285 : 480}
-              maxHeight={isMobile ? 400 : 683}
+              minWidth={isMobile ? null : 285}
+              maxWidth={isMobile ? null : 480}
+              maxHeight={isMobile ? null : 683}
               drawShadow={true}
               flippingTime={800}
               usePortrait={isMobile}
