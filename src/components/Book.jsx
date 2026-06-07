@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import HTMLFlipBook from "react-pageflip";
 
-export default function GarmentTechpack({ garmentPhoto, techpackPhotos }) {
+export default function Book({ bookCover, bookPages }) {
   const [isMobile, setIsMobile] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -14,12 +14,12 @@ export default function GarmentTechpack({ garmentPhoto, techpackPhotos }) {
 
   return (
     <>
-      {/* Garment Image (clickable) */}
+      {/* Book Cover (clickable) */}
       <div className="flex justify-center mb-16 w-full">
         <div className="w-full flex justify-center">
           <img
-            src={garmentPhoto.src}
-            alt={garmentPhoto.alt}
+            src={bookCover.src}
+            alt={bookCover.alt}
             onClick={() => setOpen(true)}
             className="cursor-pointer object-contain max-h-[80vh] border border-black dark:border-white rounded-2xl"
           />
@@ -48,27 +48,28 @@ export default function GarmentTechpack({ garmentPhoto, techpackPhotos }) {
             onClick={(e) => e.stopPropagation()}
           >
             <HTMLFlipBook
-              width={isMobile ? 300 : 1900}
-              height={isMobile ? 400 : 1400}
+              width={isMobile ? 300 : 480}
+              height={isMobile ? 400 : 683}
               size="stretch"
               minWidth={300}
-              maxWidth={isMobile ? 350 : 1900}
-              maxHeight={isMobile ? 500 : 1400}
+              maxWidth={isMobile ? 350 : 480}
+              maxHeight={isMobile ? 500 : 683}
               drawShadow={true}
               flippingTime={800}
               usePortrait={isMobile}
               useMouseEvents={true}
               responsive={true}
+              showCover={true}
               style={{ width: "100%", height: "auto" }}
             >
-              {techpackPhotos.map((photo, i) => (
+              {bookPages.map((photo, i) => (
                 <div
                   key={i}
                   className="border border-black rounded-2xl bg-white dark:bg-neutral-800 flex items-center justify-center"
                 >
                   <img
                     src={photo.src}
-                    alt={photo.alt || `Tech pack page ${i + 1}`}
+                    alt={photo.alt || `Book page ${i + 1}`}
                     className="object-contain w-full h-full"
                   />
                 </div>

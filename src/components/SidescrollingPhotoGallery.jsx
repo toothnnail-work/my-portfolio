@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 
-export default function PhotoGallery({ photos }) {
+export default function SidescrollingPhotoGallery({ photos }) {
   const [activeIndex, setActiveIndex] = useState(null);
   const [zoomed, setZoomed] = useState(false);
   const [naturalSize, setNaturalSize] = useState({ w: 0, h: 0 });
@@ -83,20 +83,20 @@ export default function PhotoGallery({ photos }) {
 
             const maxScrollLeft = Math.max(
               0,
-              container.scrollWidth - container.clientWidth
+              container.scrollWidth - container.clientWidth,
             );
             const maxScrollTop = Math.max(
               0,
-              container.scrollHeight - container.clientHeight
+              container.scrollHeight - container.clientHeight,
             );
 
             container.scrollLeft = Math.min(
               Math.max(desiredScrollLeft, 0),
-              maxScrollLeft
+              maxScrollLeft,
             );
             container.scrollTop = Math.min(
               Math.max(desiredScrollTop, 0),
-              maxScrollTop
+              maxScrollTop,
             );
           });
         });
