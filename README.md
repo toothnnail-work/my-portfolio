@@ -22,12 +22,13 @@ Do or install these things first
 <hr/>
 
 #### Navigate to wherever you want to install this codebase
-input `cd ~` 
-input `mkdir MyPortfolio` 
-input `cd MyPortfolio`
-input `git clone git@github.com:sandisz-d734m37/jacks-portfolio.git`
-wait or follow the prompt
-input `code ./jacks-portfolio` - this should open up VScode
+
+- input `cd ~`
+- input `mkdir MyPortfolio` 
+- input `cd MyPortfolio`
+- input `git clone git@github.com:sandisz-d734m37/jacks-portfolio.git`
+- wait or follow the prompt
+- input `code ./jacks-portfolio` - this should open up VScode
 
 <hr/>
 
@@ -35,11 +36,11 @@ input `code ./jacks-portfolio` - this should open up VScode
 
 <hr/>
 
-Open a Terminal (<strong>Terminal > New Terminal</strong>)
-input `npm install`
-input `npm run dev`
-wait until your terminal stops doing anything
-press `o` - this should open your site in LocalHost for viewing
+- Open a Terminal (<strong>Terminal > New Terminal</strong>)
+- input `npm install`
+- input `npm run dev`
+- wait until your terminal stops doing anything
+- press `o` - this should open your site in LocalHost for viewing
 
 <hr/>
 
