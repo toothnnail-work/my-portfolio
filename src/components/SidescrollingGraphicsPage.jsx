@@ -14,4 +14,4 @@ export default function EcomPhotographs() {
                 <SidescrollingPhotoGallery photos={graphicDesign} />
           </div>
         );
-}</div>
+}
