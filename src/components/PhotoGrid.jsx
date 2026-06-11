@@ -122,7 +122,7 @@ export default function PhotoGrid({ photos }) {
   return (
     <>
       {/* Grid */}
-      <div className="columns-1 sm:columns-2 md:columns-3 gap-1 space-y-1">
+      <div className="columns-1 sm:columns-2 md:columns-5 gap-1 space-y-1">
         {shuffledPhotos.map((photo, index) => (
           <img
             key={index}
@@ -133,7 +133,7 @@ export default function PhotoGrid({ photos }) {
               setActiveIndex(index);
               setZoomed(false);
             }}
-            className="w-full h-auto cursor-zoom-in hover:opacity-80 transition-opacity"
+            className="w-full h-auto cursor-zoom-in hover:opacity-80 transition-opacity rounded-md"
           />
         ))}
       </div>

@@ -78,7 +78,7 @@ const photos = [
 export default function PhotographyGridPage() {
   return (
     <div>
-      <h2 className="text-4xl font-semibold mb-6">Misc. Photography</h2>
+      <h2 className="text-4xl font-semibold mb-6">Miscellanious</h2>
       <PhotoGrid photos={photos} />
     </div>
   );

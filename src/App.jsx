@@ -2,18 +2,20 @@ import { useState } from "react";
 import LegendNav from "./components/legendNav";
 import Section from "./components/Section";
 import FullScreenSection from "./components/FullScreenSection";
-import Library from "./components/Library";
-// import SidescrollingPhotographyPage from "./components/SidescrollingPhotographyPage";
-// import PhotographyGridPage from "./components/PhotographyGridPage";
+// import Library from "./components/Library";
+import SidescrollingPhotographyPage from "./components/SidescrollingPhotographyPage";
+import SidescrollingGraphicsPage from "./components/SidescrollingGraphicsPage";
+import PhotographyGridPage from "./components/PhotographyGridPage";
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const sections = [
     { id: "home", label: "Home" },
-    { id: "library", label: "Library" },
-    // { id: "side-scroller", label: "Side Scroller" },
-    // { id: "photo-grid", label: "Photo Grid" },
+    // { id: "library", label: "Library" },
+    { id: "cut-and-sew", label: "Cut And Sew" },
+    { id: "graphic-design", label: "Graphic Design" },
+    { id: "miscellanious", label: "Miscellanious" },
     { id: "contact", label: "Contact" },
   ];
 
@@ -27,7 +29,7 @@ function App() {
   }
 
   return (
-    <div className="transition-colors duration-500 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 min-h-screen google-sans-code-mypfolio flex">
+    <div className="transition-colors duration-500 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 min-h-screen google-sans-code-mypfolio flex rounded-xl">
       <LegendNav sections={sections} onToggle={setSidebarOpen} />
 
       <div
@@ -40,9 +42,9 @@ function App() {
             <div className="text-center">
               <div className="flex justify-center mb-4">
                 <img
-                  src="https://jack-weakly-portfolio-assets.s3.us-east-2.amazonaws.com/BOOK/JackFuckingWeakly.jpg"
+                  src="https://jackweaklyportfolio.s3.us-east-2.amazonaws.com/Portfolio+Assets/ToothandNailLogoMain.png"
                   alt="Jack Fucking Weakly"
-                  className="w-[500px] h-[500px] mb-[5vh]"
+                  className="w-[200px] h-[200px] mb-[5vh] mt-[30vh]"
                 />
               </div>
 
@@ -63,21 +65,25 @@ function App() {
           </div>
         </FullScreenSection>
 
-        <Section id="library">
+        {/* <Section id="library">
           <Library />
-        </Section>
+        </Section> */}
 
         {/* <Section id="graphics">
           <GraphicsPage />
         </Section> */}
 
-        {/* <Section id="side-scroller">
+        <Section id="cut-and-sew">
           <SidescrollingPhotographyPage />
-        </Section> */}
+        </Section>
 
-        {/* <Section id="photo-grid">
+        <Section id="graphic-design">
+          <SidescrollingGraphicsPage />
+        </Section>
+
+        <Section id="miscellanious">
           <PhotographyGridPage />
-        </Section> */}
+        </Section>
 
         <Section id="contact">
           <h2 className="text-4xl font-semibold mb-2">Contact</h2>
@@ -85,7 +91,7 @@ function App() {
             <a href="https://www.instagram.com/jackadaktal/">@jackadaktal</a>
           </p>
           <p>
-            <a href="mailto:jackweakly@gmail.com">jackweakly@gmail.com</a>
+            <a href="mailto:hello@toothandnail.xyz">hello@toothandnail.xyz</a>
           </p>
         </Section>
       </div>
