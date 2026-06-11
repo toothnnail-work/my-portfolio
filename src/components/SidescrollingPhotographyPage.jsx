@@ -81,24 +81,39 @@ const bookThree = [
   },
 ];
 
+const Ebay = [
+  {
+    src: "https://jack-weakly-portfolio-assets.s3.us-east-2.amazonaws.com/Book3/cover.jpg",
+    alt: "Cover of Book",
+  },
+  {
+    src: "https://jack-weakly-portfolio-assets.s3.us-east-2.amazonaws.com/Book3/page1.jpg",
+    alt: "Page 1",
+  },
+  {
+    src: "https://jack-weakly-portfolio-assets.s3.us-east-2.amazonaws.com/Book3/page2.jpg",
+    alt: "Page 2",
+  },
+];
+
 const allBooks = [...bookOne, ...bookTwo, ...bookThree];
 
 export default function EcomPhotographs() {
   return (
     <div>
-      <h2 className="text-4xl font-semibold mb-6">Side Scroller</h2>
+      <h2 className="text-4xl font-semibold mb-6">Cut And Sew</h2>
 
-      <h4 className="text-xl font-semibold mb-4">book 1</h4>
+      <h4 className="text-xl font-semibold mb-4">Puppet Theater</h4>
       <SidescrollingPhotoGallery photos={bookOne} />
 
-      <h4 className="text-xl font-semibold mb-4">book 2</h4>
+      <h4 className="text-xl font-semibold mb-4">Shell Corp.</h4>
       <SidescrollingPhotoGallery photos={bookTwo} />
 
-      <h4 className="text-xl font-semibold mb-4">book 3</h4>
+      <h4 className="text-xl font-semibold mb-4">Rose In Good Faith</h4>
       <SidescrollingPhotoGallery photos={bookThree} />
 
-      <h4 className="text-xl font-semibold mb-4">book 1, 2, & 3</h4>
-      <SidescrollingPhotoGallery photos={allBooks} />
+      <h4 className="text-xl font-semibold mb-4">Elizabeth Bay ltd.</h4>
+      <SidescrollingPhotoGallery photos={Ebay} />
     </div>
   );
 }
