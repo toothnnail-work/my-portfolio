@@ -15,8 +15,8 @@ function App() {
     // { id: "library", label: "Library" },
     { id: "cut-and-sew", label: "Cut And Sew" },
     { id: "graphic-design", label: "Graphic Design" },
-    { id: "miscellanious", label: "Miscellanious" },
-    { id: "contact", label: "Contact" },
+    { id: "miscellaneous", label: "Miscellaneous" },
+    // { id: "contact", label: "Contact" },
   ];
 
   function scrollToSection(idx) {
@@ -44,11 +44,25 @@ function App() {
                 <img
                   src="https://jackweaklyportfolio.s3.us-east-2.amazonaws.com/Portfolio+Assets/ToothandNailLogoMain.png"
                   alt="Tooth And Nail logo"
-                  className="w-[200px] h-[200px] mb-[5vh] mt-[15vh]"
+                  className="w-[200px] h-[200px] mb-[4vh] mt-[7vh] md:mt-[20vh] lg:mt-[20vh]"
                 />
               </div>
 
-              <p className="google-sans-code-mypfolio mb-[10vh]">WELCOME</p>
+              <div className="d-flex flex-col gap-3 mb-[4vh]">
+                <h3 className="ml-2 text-2xl font-semibold mb-[2vh]">
+                  JACK WEAKLY
+                </h3>
+                <p className="my-[2vh]">
+                  <a href="https://www.instagram.com/jackadaktal/">
+                    @jackadaktal
+                  </a>{" "}
+                </p>
+                <p>
+                  <a href="mailto:hello@toothandnail.xyz">
+                    hello@toothandnail.xyz
+                  </a>
+                </p>
+              </div>
 
               <div className="d-flex flex-col gap-3 py-5">
                 {sections.map((section, idx) => (
@@ -81,11 +95,11 @@ function App() {
           <SidescrollingGraphicsPage />
         </Section>
 
-        <Section id="miscellanious">
+        <Section id="miscellaneous">
           <PhotographyGridPage />
         </Section>
 
-        <Section id="contact">
+        {/* <Section id="contact">
           <h2 className="ml-2 text-4xl font-semibold mb-2">Contact</h2>
           <p className="ml-2">
             <a href="https://www.instagram.com/jackadaktal/">@jackadaktal</a>
@@ -93,7 +107,7 @@ function App() {
           <p className="ml-2">
             <a href="mailto:hello@toothandnail.xyz">hello@toothandnail.xyz</a>
           </p>
-        </Section>
+        </Section> */}
       </div>
     </div>
   );
