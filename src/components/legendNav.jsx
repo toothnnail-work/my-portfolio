@@ -121,7 +121,7 @@ export default function LegendNav({ sections, onToggle }) {
               onClick={() => scrollToSection(idx)}
               className={`text-left text-sm hover:underline ${
                 idx === currentSection
-                  ? "text-red-600"
+                  ? "text-lime-400"
                   : "text-black dark:text-white"
               }`}
             >

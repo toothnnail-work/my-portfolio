@@ -21,7 +21,7 @@ export default function Book({ bookCover, bookPages }) {
             src={bookCover.src}
             alt={bookCover.alt}
             onClick={() => setOpen(true)}
-            className="cursor-pointer object-contain max-h-[80vh] border border-black dark:border-white rounded-2xl"
+            className="cursor-pointer object-contain max-h-[80vh] border border-lime-400 dark:border-white rounded-2xl"
           />
         </div>
       </div>
@@ -66,7 +66,7 @@ export default function Book({ bookCover, bookPages }) {
               {bookPages.map((photo, i) => (
                 <div
                   key={i}
-                  className="border border-black rounded-2xl overflow-hidden bg-white dark:bg-neutral-800 flex items-center justify-center"
+                  className="border border-lime-400 rounded-2xl overflow-hidden bg-white dark:bg-neutral-800 flex items-center justify-center"
                 >
                   <img
                     src={photo.src}

@@ -141,7 +141,7 @@ export default function PhotoGrid({ photos }) {
       {/* Lightbox */}
       {activeIndex !== null && (
         <div
-          className="fixed inset-0 z-50 bg-white bg-opacity-90 flex items-center justify-center p-4"
+          className="fixed inset-0 z-50 bg-lime-400 bg-opacity-90 flex items-center justify-center p-4"
           onClick={closeLightbox}
         >
           <div className="relative max-w-full max-h-[100vh] w-full">
