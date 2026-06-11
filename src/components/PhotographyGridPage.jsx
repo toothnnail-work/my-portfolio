@@ -5,7 +5,7 @@ const BASE = "https://jackweaklyportfolio.s3.us-east-2.amazonaws.com/New+Portfol
 const photos = Array.from({ length: 42 }, (_, i) => ({
     src: `${BASE}/Misc/${i + 1}.png`,
     alt: `Misc ${i + 1}`,
-}
+}));
 
 export default function PhotographyGridPage() {
     return (
