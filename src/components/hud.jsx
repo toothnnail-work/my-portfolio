@@ -18,7 +18,7 @@ export default function HUD({ toggleTheme, isDark }) {
     <div
       className="fixed top-4 left-4 right-4 sm:left-6 sm:right-auto z-50 bg-white dark:bg-neutral-800/90
                  backdrop-blur-lg p-3 sm:p-4 flex flex-wrap sm:flex-col space-x-2 sm:space-x-0 sm:space-y-2
-                 text-sm sm:text-base font-medium border border-black dark:border-white"
+                 text-sm sm:text-base font-medium border border-lime-400 dark:border-white"
     >
       {/* Home */}
       <button
