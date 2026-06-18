@@ -64,6 +64,18 @@ function App() {
                 </p>
               </div>
 
+              <div className="mx-auto max-w-md text-left mt-[2vh] mb-[4vh] px-4">
+                <p className="mb-3">
+                  Tooth &amp; Nail is a turn-key resource built exclusively for clothing brands.
+                </p>
+                <p className="mb-3">
+                  Rooted in design, the work extends through every operational and marketing function a brand requires. I handle everything from design and production to paid media and direct-to-consumer marketing.
+                </p>
+                <p>
+                  One partner, every process.
+                </p>
+              </div>
+
               <div className="d-flex flex-col gap-3 py-5">
                 {sections.map((section, idx) => (
                   <button
