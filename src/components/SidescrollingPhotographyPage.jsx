@@ -8,9 +8,14 @@ const puppetTheater = Array.from({ length: 38 }, (_, i) => ({
   alt: `Puppet Theater ${i + 1}`,
 }));
 
-const shellCorp = Array.from({ length: 18 }, (_, i) => ({
-  src: `${BASE}/Shell+Corp/${i + 1}.png`,
-  alt: `Shell Corp ${i + 1}`,
+// Newest images (25 to 29) are shown first, then the original 1 to 18.
+const shellCorpOrder = [
+  25, 26, 27, 28, 29,
+  ...Array.from({ length: 18 }, (_, i) => i + 1),
+];
+const shellCorp = shellCorpOrder.map((n) => ({
+  src: `${BASE}/Shell+Corp/${n}.png`,
+  alt: `Shell Corp ${n}`,
 }));
 
 const roseInGoodFaith = Array.from({ length: 8 }, (_, i) => ({
@@ -18,9 +23,14 @@ const roseInGoodFaith = Array.from({ length: 8 }, (_, i) => ({
   alt: `Rose In Good Faith ${i + 1}`,
 }));
 
-const elizabethBay = Array.from({ length: 17 }, (_, i) => ({
-  src: `${BASE}/Elizabeth+Bay/${i + 1}.png`,
-  alt: `Elizabeth Bay ${i + 1}`,
+// Newest images (18 to 20) are shown first, then the original 1 to 17.
+const elizabethBayOrder = [
+  18, 19, 20,
+  ...Array.from({ length: 17 }, (_, i) => i + 1),
+];
+const elizabethBay = elizabethBayOrder.map((n) => ({
+  src: `${BASE}/Elizabeth+Bay/${n}.png`,
+  alt: `Elizabeth Bay ${n}`,
 }));
 
 export default function EcomPhotographs() {
