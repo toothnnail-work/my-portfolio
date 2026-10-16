@@ -12,7 +12,7 @@ const puppetTheater = Array.from({ length: 38 }, (_, i) => ({
 const shellCorpOrder = [
   25, 26, 27, 28, 29,
   ...Array.from({ length: 18 }, (_, i) => i + 1),
-];
+, 19, 20, 21, 22, 23, 24];
 const shellCorp = shellCorpOrder.map((n) => ({
   src: `${BASE}/Shell+Corp/${n}.png`,
   alt: `Shell Corp ${n}`,
