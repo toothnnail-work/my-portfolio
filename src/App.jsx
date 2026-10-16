@@ -6,6 +6,7 @@ import FullScreenSection from "./components/FullScreenSection";
 import SidescrollingPhotographyPage from "./components/SidescrollingPhotographyPage";
 import SidescrollingGraphicsPage from "./components/SidescrollingGraphicsPage";
 import PhotographyGridPage from "./components/PhotographyGridPage";
+import PleasuresNowPage from "./components/PleasuresNowPage";
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -14,6 +15,7 @@ function App() {
     { id: "home", label: "Home" },
     // { id: "library", label: "Library" },
     { id: "cut-and-sew", label: "Cut And Sew" },
+    { id: "pleasures-now", label: "Pleasures Now" },
     { id: "graphic-design", label: "Graphic Design" },
     { id: "miscellaneous", label: "Miscellaneous" },
     // { id: "contact", label: "Contact" },
@@ -101,6 +103,10 @@ function App() {
 
         <Section id="cut-and-sew">
           <SidescrollingPhotographyPage />
+        </Section>
+
+        <Section id="pleasures-now">
+          <PleasuresNowPage />
         </Section>
 
         <Section id="graphic-design">
